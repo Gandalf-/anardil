@@ -13,7 +13,6 @@ CATEGORIES_ON_MENU = True
 TAGS_ON_MENU = True
 SHOW_ARTICLE_AUTHOR = True
 SHOW_HOME_ON_MENU = True
-#PROFILE_IMAGE = 'https://www.anardil.net/extra/bg.jpg'
 
 EMAIL_ADDRESS = 'leaf@anardil.net'
 GITHUB_ADDRESS = 'https://github.com/Gandalf-'
