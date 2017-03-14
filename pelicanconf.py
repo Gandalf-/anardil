@@ -21,7 +21,6 @@ GITHUB_ADDRESS = 'https://github.com/Gandalf-'
 PATH = 'content'
 STATIC_PATHS = ['blog',
                 'downloads',
-                'robots.txt',
                 'extra']
 
 ARTICLE_PATHS = ['blog']
@@ -29,7 +28,8 @@ ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 EXTRA_PATH_METADATA = {
-        'extra/favicon.ico': {'path' : 'favicon.ico'}
+        'extra/favicon.ico': {'path' : 'favicon.ico'},
+        'extra/robots.txt': {'path' : 'robots.txt'}
         }
 
 TIMEZONE = 'America/Los_Angeles'

@@ -28,10 +28,12 @@
             {% endif %}
           {% endfor %}
         {% endif %}
+        <!--
         {% if CATEGORIES_ON_MENU %}
           <li><a class="nodec" href="{{ SITEURL }}/categories.html">Categories</a></li>
           <li class="muted">|</li>
         {% endif %}
+        -->
         {% if TAGS_ON_MENU %}
           <li><a class="nodec" href="{{ SITEURL }}/tags.html">Tags</a></li>
           <li class="muted">|</li>
@@ -40,7 +42,11 @@
           <li><a class="nodec" href="{{ SITEURL }}/archives.html">Archives</a></li>
           <li class="muted">|</li>
         {% endif %}
-          <li><a class="nodec" target="_blank" href="https://overviewer.anardil.net">Minecraft</a></li>
+          <li><a class="nodec" target="_blank" 
+            href="https://overviewer.anardil.net">Minecraft</a></li>
+          <li class="muted">|</li>
+          <li><a class="nodec" target="_blank"
+            href="http://hal-demo.anardil.net:48000">Hal</a></li>
           <li class="muted">|</li>
         {% if EMAIL_ADDRESS %}
           <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
