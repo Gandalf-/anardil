@@ -42,14 +42,21 @@
           <li><a class="nodec" href="{{ SITEURL }}/archives.html">Archives</a></li>
           <li class="muted">|</li>
         {% endif %}
-          <li><a class="nodec" target="_blank" 
-            href="https://overviewer.anardil.net">Minecraft</a></li>
-          <li class="muted">|</li>
-          <li><a class="nodec" target="_blank"
-            href="http://hal.anardil.net:2095/">Hal</a></li>
-          <li class="muted">|</li>
-          <li><a class="nodec" target="_blank"
-            href="https://chat.anardil.net">Chat</a></li>
+          <li>
+            <a title="Overviewer" class="nodec" target="_blank" href="https://overviewer.anardil.net">
+              <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a title="Hal" class="nodec" target="_blank" href="http://hal.anardil.net:2095/">
+              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+            </a>
+          </li>
+          <li>
+            <a title="Chat" class="nodec" target="_blank" href="https://chat.anardil.net">
+              <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+            </a>
+          </li>
           <li class="muted">|</li>
         {% if EMAIL_ADDRESS %}
           <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
