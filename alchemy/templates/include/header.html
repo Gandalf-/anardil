@@ -11,53 +11,48 @@
       </h1>
       <h3 class="header-text">{{ SITE_SUBTEXT }}</h3>
       <ul class="header-menu list-inline">
-        {% if SHOW_HOME_ON_MENU %}
-          <li><a class="nodec" href="{{ SITEURL }}/#">Home</a></li>
-        {% endif %}
-        {% for title, link in MENU_ITEMS %}
-          <li><a class="nodec" href="{{ link }}" target="_blank">{{ title }}</a></li>
-        {% endfor %}
-        {% if PAGES_ON_MENU %}
-          {% for p in PAGES %}
-            {% if loop.first %}
-              <li class="muted">|</li>
-            {% endif %}
-            <li><a class="nodec" href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
-            {% if loop.last %}
-              <li class="muted">|</li>
-            {% endif %}
-          {% endfor %}
-        {% endif %}
-        <!--
-        {% if CATEGORIES_ON_MENU %}
-          <li><a class="nodec" href="{{ SITEURL }}/categories.html">Categories</a></li>
-          <li class="muted">|</li>
-        {% endif %}
-        -->
-        {% if TAGS_ON_MENU %}
-          <li><a class="nodec" href="{{ SITEURL }}/tags.html">Tags</a></li>
-          <li class="muted">|</li>
-        {% endif %}
-        {% if ARCHIVES_ON_MENU %}
-          <li><a class="nodec" href="{{ SITEURL }}/archives.html">Archives</a></li>
-          <li class="muted">|</li>
-        {% endif %}
-          <li>
-            <a title="Overviewer" class="nodec" target="_blank" href="https://overviewer.anardil.net">
-              <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
-            </a>
-          </li>
-          <li>
-            <a title="Hal" class="nodec" target="_blank" href="http://hal.anardil.net:2095/">
-              <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-            </a>
-          </li>
-          <li>
-            <a title="Chat" class="nodec" target="_blank" href="https://chat.anardil.net">
-              <span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-            </a>
-          </li>
-          <li class="muted">|</li>
+
+        <li>
+          <a title="Home" class="nodec" target="_blank" href="{{ SITEURL }}">
+            <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a title="Tags" class="nodec" target="_blank" href="{{ SITEURL }}/tags.html">
+            <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a title="About" class="nodec" target="_blank" href="{{ SITEURL }}/pages/about.html">
+            <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="muted">|</li>
+
+        <li>
+          <a title="Overviewer" class="nodec" target="_blank" href="https://overviewer.anardil.net">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a title="Hal" class="nodec" target="_blank" href="http://hal.anardil.net:2095/">
+            <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a title="Chat" class="nodec" target="_blank" href="https://chat.anardil.net">
+            <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+          </a>
+        </li>
+        <li>
+          <a title="Public Share" class="nodec" target="_blank" href="https://public.anardil.net">
+            <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+          </a>
+        </li>
+
+        <li class="muted">|</li>
+
         {% if EMAIL_ADDRESS %}
           <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
         {% endif %}
