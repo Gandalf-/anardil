@@ -68,8 +68,9 @@
         {% if FB_ADDRESS %}
           <li><a class="nodec icon-facebook" href="{{ FB_ADDRESS }}"></a></li>
         {% endif %}
-        <!-- Google Plus One button -->
+        <!-- Google Plus One button 
         <div class="g-plusone" data-size="small"></div>
+        -->
         {% if FEED_ATOM or FEED_RSS %}
           <li><a class="nodec icon-rss" href="/{% if FEED_ATOM %}{{ FEED_ATOM }}{% else %}{{ FEED_RSS }}{% endif %}"></a></li>
         {% endif %}
