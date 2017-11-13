@@ -1,7 +1,7 @@
 Title: Virtue
 Date: 2016-09-22
 Category: Articles
-Tags: article, personal, john galt
+Tags: article, personal, philosophy
 Status: published
 Summary: A new way to look at an old word and maybe yourself
 

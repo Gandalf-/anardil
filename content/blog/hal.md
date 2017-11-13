@@ -1,7 +1,7 @@
 Title: Hal
 Date: 2017-04-02
 Category: Programming
-Tags: programming, minecraft, article
+Tags: programming, minecraft, article, bash, computers
 Status: published
 Summary: An in depth look into Hal, a Minecraft AI
 

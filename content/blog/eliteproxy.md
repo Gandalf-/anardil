@@ -1,7 +1,7 @@
 Title: Elite Proxies
 Date: 2015-11-16
 Category: Articles
-Tags: computers, security, privacy
+Tags: computers, security, privacy, networking
 Summary: What they are, how they work, how they can be useful, and how you can use one yourself
 
 ### Abstract
