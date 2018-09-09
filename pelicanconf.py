@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'leaf'
-SITENAME = u'Anardil'
-SITEURL = u'https://www.anardil.net'
+AUTHOR = 'leaf'
+SITENAME = 'Anardil'
+SITEURL = 'https://www.anardil.net'
 
-THEME = 'alchemy'
+# THEME = 'alchemy'
 SITE_SUBTEXT = 'A spot of sunlight'
 PAGES_ON_MENU = True
 CATEGORIES_ON_MENU = True
@@ -55,4 +55,4 @@ SOCIAL = (('Github', 'https://github.com/Gandalf-'),
 DEFAULT_PAGINATION = 7
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+# RELATIVE_URLS = True
