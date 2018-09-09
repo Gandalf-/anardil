@@ -1,2 +1,5 @@
 *.pyc
 output
+default.conf
+keys
+ssl.conf

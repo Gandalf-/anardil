@@ -1,4 +1,4 @@
-Title: Superior Vimrc
+Title: Vimrc
 Date: 2017-06-28
 Category: Computers
 Tags: computers, programming
@@ -10,10 +10,8 @@ your perusal. What's the best way to use this? Skim through, find something
 that sounds interesting and try it out for yourself. Like it? Hate it? Try
 something else! Experiment and iterate. Patience is key!
 
-Similar blog posts all have titles like "Amazing Vimrc", "Ultimate Vimrc",
-"Best Vimrc", which vaguely reminds me of Spiderman. Why not run with the vein
-and have a "Superior Vimrc"? Without further ado, here's a break down of my
-personal `.vimrc`. You can find it [here](https://public.anardil.net/DotFiles/vimrc).
+Without further ado, here's a break down of my
+personal `.vimrc`. You can find it [here](https://public.anardil.net/DotFiles/etc/vimrc).
 
 A note! This is not a static file! Be sure to check back in periodically for
 updates. There's even a [Github Repo](https://github.com/gandalf-/DotFiles)!
