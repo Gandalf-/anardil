@@ -8,7 +8,7 @@ Summary: A comparison of various tools for annonymity on the web
 There are a lot of ways to gain some anonymity on the web, of which proxies and VPNs are
 quite common. In particular, Squid3, SSH, Tor, and OpenVPN are great free options if
 you're looking to run your own service. I've used all of these while experimenting with
-anonymity and private networks in general.  
+anonymity and private networks in general.
 
 *Note:* My claims in this article are supported largely only by personal experience.
 Nevertheless, hopefully this is helpful if you're looking into anonymity on the web. A
@@ -35,7 +35,7 @@ from a technical point of view like mine, here's an overview of some tools you c
 balancing. As a full proxy, it has a unique advantage in that it has direct access to all
 the HTTP headers passing through it and can manipulate them as you see fit. I have another
 article here that describes exactly what an [elite
-proxy](https://www.anardil.net/2015/elite-proxies.html) is, and how it differs from other
+proxy](https://anardil.net/2015/elite-proxies.html) is, and how it differs from other
 kinds of proxies. The main idea is that it manipulates HTTP headers to create the illusion
 that the proxy server itself is making all requests.
 
@@ -97,7 +97,7 @@ connection between the client and proxy server secured with TLS as well.
 As an aside, OpenVPN appears to be superior to IPSec VPNs in both performance and
 security. More devices have built-in support for IPSec VPNS, Cisco variety in particular,
 but these solutions typically are not free or as easy to set up. You can read more about
-IPSec [here](https://www.anardil.net/2015/internet-protocol-security-ipsec.html) in
+IPSec [here](https://anardil.net/2015/internet-protocol-security-ipsec.html) in
 another article I wrote.
 
 
@@ -131,7 +131,7 @@ from any device that has an SSH client. You don't need the OpenVPN client softwa
 pack around your certificates (assuming you're not using certificates for SSH).
 
 <br>
-## Tor: excellent, but out of your hands 
+## Tor: excellent, but out of your hands
 
 There have been numerous discussions about the pros and cons of
 [Tor](https://www.torproject.org/) in many other places across the web. An entire article

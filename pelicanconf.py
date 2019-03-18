@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'leaf'
 SITENAME = 'Anardil'
-SITEURL = 'https://www.anardil.net'
+SITEURL = 'https://anardil.net'
 
 # THEME = 'alchemy'
 SITE_SUBTEXT = 'A spot of sunlight'
@@ -14,7 +14,7 @@ TAGS_ON_MENU = True
 SHOW_ARTICLE_AUTHOR = True
 SHOW_HOME_ON_MENU = True
 
-EMAIL_ADDRESS = 'leaf@anardil.net'
+EMAIL_ADDRESS = 'austin@anardil.net'
 GITHUB_ADDRESS = 'https://github.com/Gandalf-'
 
 

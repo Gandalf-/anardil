@@ -12,7 +12,7 @@ dozen or so numbers in the sequence too
   1,1,2,3,5,8,13,21,34,...
 
 But have you ever wondered what's beyond those tiny numbers? How about WAY
-beyond? Hold on to your seat, this is going to get crazy. 
+beyond? Hold on to your seat, this is going to get crazy.
 
 Behold, the thousandth Fibonacci number
 
@@ -27,7 +27,7 @@ universe. We over shot that by quite a bit.
 
 ```Scheme
 (define (fibonacci-log-print n name)
-  
+
   (define (fibo-log-print a b p q count)
     (cond ((= count 0) (print-this b name))
           ((even? count)
@@ -39,7 +39,7 @@ universe. We over shot that by quite a bit.
                                 (+ (* b p) (* a q))
                                 p q
                                 (- count 1)))))
-  
+
   (fibo-log-print 1 0 0 1 n))
 
 (fibonacci-log-print 100000000 "Data/log-hundred-million.txt")

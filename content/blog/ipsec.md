@@ -10,7 +10,7 @@ Status: published
         Overview
         Suite
                 Authentication Header
-                Encapsulating Security Payloads 
+                Encapsulating Security Payloads
                 Security Associations and Parameters
                 Internet Key Exchange
         Operation Modes
@@ -22,7 +22,7 @@ Status: published
 
 
 ## Abstract
-This document will describe the capabilities and mechanics of Internet Protocol Security as outlined by the Internet Engineering Task Force. Thorough explanations will be given for the purpose and capabilities of the two main protocols, Authentication Header and Encapsulating Security Payloads, as well as both operation modes, Tunnel and Transport. Use cases and example configurations will also be provided. 
+This document will describe the capabilities and mechanics of Internet Protocol Security as outlined by the Internet Engineering Task Force. Thorough explanations will be given for the purpose and capabilities of the two main protocols, Authentication Header and Encapsulating Security Payloads, as well as both operation modes, Tunnel and Transport. Use cases and example configurations will also be provided.
 
 
 ## Overview
@@ -34,10 +34,10 @@ The IPSec suite is composed of two main protocols, Authentication Header (AH) an
 
 
 ### Authentication Headers
-This protocol provides the mechanisms for verifying packet data integrity and the source address. Verification is provided by the hashing algorithms supported by AH, such as SHA1 and MD5. Supposing both clients have a non-standard hashing algorithm, IPSec allows them to use that in place of the required standards. AH does not provide any form of encryption to any part of the packet, meaning that the full contents can be sniffed and revealed by third parties. 
-  
-<center> 
-![alt text](https://www.anardil.net/extra/figure01.png "Figure 01")
+This protocol provides the mechanisms for verifying packet data integrity and the source address. Verification is provided by the hashing algorithms supported by AH, such as SHA1 and MD5. Supposing both clients have a non-standard hashing algorithm, IPSec allows them to use that in place of the required standards. AH does not provide any form of encryption to any part of the packet, meaning that the full contents can be sniffed and revealed by third parties.
+
+<center>
+![alt text](https://anardil.net/extra/figure01.png "Figure 01")
 
 *Figure 01: IPSec AH IPv4 Header Format [2]*
 
@@ -65,16 +65,16 @@ Additionally, AH can provide replay attack protection by verifying the sequence 
 <br>
 
 
-In IPv6, AH is an extension header that authenticates all headers and data after it’s location in the packet. The AH extension is added immediately after the original packet header, but before the transport header; also, the protocol field data in the original packet is replaced with 51, which denotes AH  [1]. 
+In IPv6, AH is an extension header that authenticates all headers and data after it’s location in the packet. The AH extension is added immediately after the original packet header, but before the transport header; also, the protocol field data in the original packet is replaced with 51, which denotes AH  [1].
 
 <center>
-![alt text](https://www.anardil.net/extra/figure03.png "Figure 03")
+![alt text](https://anardil.net/extra/figure03.png "Figure 03")
 
 *Figure 03: IPSec AH IPv6 Packet Format [4]*
 
 </center>
 <br>
-        
+
 Without NAT traversal, NAT incompatibility is not a problem for gateway to gateway connections, such as those between routers for management purposes. With AH, routers communication about route updates can be sure that the information they receive is correct and is coming from who it should be. The lack of NAT support and lack of encryption make AH less popular than ESP in most applications and environments. Nonetheless, the more robust packet verification options make it useful in some environments where privacy is not a concern but payload correctness is.
 
 <br>
@@ -107,10 +107,10 @@ While the previous algorithms are required, the endpoints of the connection are 
 
 
 Unlike AH which simply precedes the packet, ESP surrounds the source packet. This is necessary to provide trailing padding for block-based encryption algorithms, as well to provide space for the ESP auth field. ESP authentication only covers ESP data, the source packet payload and its own header. Since the all the ESP fields are encrypted, it’s not possible to determine from the packet itself whether there is any authentication data at all. This is instead determined during the Security Association generation phase when the connection is made [9].
-  
+
 
 <center>
-![alt text](https://www.anardil.net/extra/figure05.png "Figure 05")
+![alt text](https://anardil.net/extra/figure05.png "Figure 05")
 
 *Figure 05: IPv6 ESP Header and Trailer [6]*
 
@@ -118,11 +118,11 @@ Unlike AH which simply precedes the packet, ESP surrounds the source packet. Thi
 <br>
 
 
-AH and ESP are typically not used together since AH doesn't allow traffic to cross NAT and the authentication provided by ESP Combined algorithms is usually robust enough to ensure packet integrity. Nonetheless, they can be used together in which case AH precedes the ESP portion of packet. In IPv6, ESP is treated as an end-to-end payload, meaning it’s placed after the hop-by-hop, routing, and fragmentation extension headers. 
+AH and ESP are typically not used together since AH doesn't allow traffic to cross NAT and the authentication provided by ESP Combined algorithms is usually robust enough to ensure packet integrity. Nonetheless, they can be used together in which case AH precedes the ESP portion of packet. In IPv6, ESP is treated as an end-to-end payload, meaning it’s placed after the hop-by-hop, routing, and fragmentation extension headers.
 
 
 <center>
-![alt text](https://www.anardil.net/extra/figure06.png "Figure 06")
+![alt text](https://anardil.net/extra/figure06.png "Figure 06")
 
 *Figure 06: ESP Tunnel and Transport Mode Packet Format*
 
@@ -158,16 +158,16 @@ A Security Association is not a unique identifier for a connection, that’s the
 ### Internet Key Exchange
 
 
-Manual key configuration is useful for some situations, but isn’t always practical. When dealing with gateways, it’s not too much work to securely set up shared secrets between the endpoints. However once the shared secret is on both hosts, it’s no longer secret because it’s symmetric. To circumvent this problem, and/or if the endpoints are mobile hosts, it’s easier to use Internet Key Exchange (IKE) protocol. An IKE daemon running on the endpoints can provide session keys for use in either tunnel or transport mode. 
-        
+Manual key configuration is useful for some situations, but isn’t always practical. When dealing with gateways, it’s not too much work to securely set up shared secrets between the endpoints. However once the shared secret is on both hosts, it’s no longer secret because it’s symmetric. To circumvent this problem, and/or if the endpoints are mobile hosts, it’s easier to use Internet Key Exchange (IKE) protocol. An IKE daemon running on the endpoints can provide session keys for use in either tunnel or transport mode.
+
 In terms of SAs and SPs, IKE provides the Security Association. In Linux, when the kernel finds the SP without an accompanying SA, it will contact the IKE daemon to generate one. [10] IKE will then contact it’s equivalent on the other end of the connection and negotiate the connection parameters.
 
 
-It’s also possible to set up automatic keying with asymmetric encryption, such as that provided with SSL, thanks to the flexibility provided by the IPSec suite. It’s not important that the public key exchange is encrypted, but it should be authenticated to prevent man-in-the-middle attacks. This is possible by having your keys signed by a certificate authority (CA). 
+It’s also possible to set up automatic keying with asymmetric encryption, such as that provided with SSL, thanks to the flexibility provided by the IPSec suite. It’s not important that the public key exchange is encrypted, but it should be authenticated to prevent man-in-the-middle attacks. This is possible by having your keys signed by a certificate authority (CA).
 
 
 <center>
-![alt text](https://www.anardil.net/extra/figure07.png "Figure 07")
+![alt text](https://anardil.net/extra/figure07.png "Figure 07")
 
 *Figure 07: IKE Communication Flow [11]*
 </center>
@@ -182,18 +182,18 @@ IPSec provides two overarching modes, in which AH and ESP act slightly different
 ### Tunnel
 
 As with a non-IPSec VPN, the entire client packet is encapsulated and encrypted within a new outer packet. The new outer packet contains the only the routing information needed to get the other point in the tunnel. Once it’s arrived at the gateway, typically a router, it will decrypt the packet based on the Security Associations that were defined during the tunnel creation. Next, it strips away the IPSec fields and pass the original packet along to its destination.
-        
+
 When configured between two routers, such as a branch office and headquarters of a business, tunnel mode provides full encryption and authentication without any client side configuration. All traffic meeting predefined specifications, such as a particular IP address range, will be caught by the router and sent through the tunnel. Configuration allows for some traffic to be untouched by IPSec and others to be handled by any number of IPSec tunnels.
-  
+
 
 <center>
-![alt text](https://www.anardil.net/extra/figure08.png "Figure 08")
+![alt text](https://anardil.net/extra/figure08.png "Figure 08")
 
 *Figure 08: IPv4 ESP Packet Format - IPSec Tunnel Mode [9]*
 
 </center>
 <br>
-        
+
 Tunnel mode supports mixed IP versions between the inner and outer packets; eg. IPv6 over IPv4 and IPv4 over IPv6.  The outer packet carries only the information required to get it to the next IPSec gateway, from which point it will be removed and the inner packet will be routed according to its specifications [5]. Similar to the nested routed in the Tor network, it is possible to encapsulate multiple IPSec packets within each other. Such a configuration would allow the same kind end-to-end anonymity that Tor provides, though there are no special provisions in IPSec to do this automatically.
 
 
@@ -205,10 +205,10 @@ IPSec tunneling by itself accomplishes it’s task of providing confidential and
 
 
 Transport mode is the default for IPSec, and is dissimilar to a VPN. Instead, it is a secured IP connection between two endpoints, such as a client and server. ESP and AH function differently in transport mode than in tunnel mode [14]. The differences in functionality between Tunnel and Transport mode are easily visualized by the graphic below.
-  
+
 
 <center>
-![alt text](https://www.anardil.net/extra/figure09.png "Figure 09")
+![alt text](https://anardil.net/extra/figure09.png "Figure 09")
 
 *Figure 09: Tunnel vs Transport Mode [15]*
 
@@ -219,16 +219,16 @@ AH and ESP do not encapsulate the source packet like in Tunnel mode, and only en
 
 
  When a packet is sent, it’s header is modified to allow for the AH fields. When it’s received on the other end, the packet is reassembled to its original format before it’s handed off the to the process waiting for it. This is done at the IP level in the network stack, applications don’t have to know how to deal with IPSec modified packets.
-  
+
 <center>
-![alt text](https://www.anardil.net/extra/figure10.png "Figure 10")
+![alt text](https://anardil.net/extra/figure10.png "Figure 10")
 
 *Figure 10: IPSec ESP Transport Mode [9]*
 
 </center>
 <br>
 
-The demarcation between transport and tunnel mode isn’t specifically defined in a field. Instead, its inferred by the value of the next-header. If the next-header is IP, it means that this packet is encapsulating another packet. 
+The demarcation between transport and tunnel mode isn’t specifically defined in a field. Instead, its inferred by the value of the next-header. If the next-header is IP, it means that this packet is encapsulating another packet.
 
 <br>
 ## Conclusion
@@ -238,7 +238,7 @@ IPSec is a suite of flexible and extensible protocols and standards designed by 
 <br>
 ## References
 1. Internetworking with TCP/IP
-	
+
 	Comer, Douglas; 4th Edition, © 2000 Prentice Hall
 
 2. [IPSec VPN WAN Design, Cisco](http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/IPSec_Over.html)

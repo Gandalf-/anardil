@@ -14,4 +14,4 @@ of the Rings. The king himself isn't known for anything particularly special.
 But the name means "friend of the sun" in Quenya. I think it' a very
 aesthetically pleasing word, and I really like the meaning.
 
-If you'd like to contact me, I'm reachable by email at `leaf@anardil.net`
+If you'd like to contact me, I'm reachable by email at `austin@anardil.net`
