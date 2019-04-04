@@ -43,6 +43,9 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
+FEED_DOMAIN = SITEURL
+FEED_RSS = 'feeds/rss.xml'
+
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
         ('Python.org', 'http://python.org/'),
