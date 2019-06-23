@@ -3,3 +3,4 @@ output
 default.conf
 keys
 ssl.conf
+.stignore
