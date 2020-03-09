@@ -26,7 +26,7 @@
       </li>
       <li class="muted">&middot;</li>
       <li class="post-category">
-        <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+        <a href="/{{ article.category.url }}">{{ article.category }}</a>
       </li>
       {% if article.tags %}
         <li class="muted">&middot;</li>
@@ -40,7 +40,7 @@
         <li class="muted">&middot;</li>
         <li>
           <address class="post-author">
-            By <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+            By <a href="/{{ article.author.url }}">{{ article.author }}</a>
           </address>
         </li>
       {% endif %}

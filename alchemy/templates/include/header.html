@@ -2,28 +2,28 @@
   <div class="container">
     {% if PROFILE_IMAGE %}
       <div class="header-image pull-left">
-        <a class="nodec" href="{{ SITEURL }}"><img src={{ PROFILE_IMAGE }}></a>
+        <a class="nodec" href="/"><img src={{ PROFILE_IMAGE }}></a>
       </div>
     {% endif %}
     <div class="header-inner">
       <h1 class="header-name">
-        <a class="nodec" href="{{ SITEURL }}">{{ SITENAME }}</a>
+        <a class="nodec" href="/">{{ SITENAME }}</a>
       </h1>
       <h3 class="header-text">{{ SITE_SUBTEXT }}</h3>
       <ul class="header-menu list-inline">
 
         <li>
-          <a title="Home" class="nodec" target="_blank" href="{{ SITEURL }}">
+          <a title="Home" class="nodec" href="/">
             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
           </a>
         </li>
         <li>
-          <a title="Tags" class="nodec" target="_blank" href="{{ SITEURL }}/tags.html">
+          <a title="Tags" class="nodec" href="/tags.html">
             <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
           </a>
         </li>
         <li>
-          <a title="About" class="nodec" target="_blank" href="{{ SITEURL }}/pages/about.html">
+          <a title="About" class="nodec" href="/pages/about.html">
             <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
           </a>
         </li>
@@ -31,13 +31,13 @@
         <li class="muted">|</li>
 
         <li>
-          <a title="Overviewer" class="nodec" target="_blank" href="https://overviewer.anardil.net">
-            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+          <a title="Public Share" class="nodec" target="_blank" href="https://public.anardil.net">
+            <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
           </a>
         </li>
         <li>
-          <a title="Public Share" class="nodec" target="_blank" href="https://public.anardil.net">
-            <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+          <a title="Surface Pictures" class="nodec" target="_blank" href="https://photos.anardil.net">
+            <span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></span>
           </a>
         </li>
         <li>
@@ -45,29 +45,43 @@
             <span class="glyphicon glyphicon-picture" aria-hidden="true"></span>
           </a>
         </li>
+        <li>
+          <a title="Overviewer" class="nodec" target="_blank" href="https://overviewer.anardil.net">
+            <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+          </a>
+        </li>
 
         <li class="muted">|</li>
 
         {% if EMAIL_ADDRESS %}
-          <li><a class="nodec icon-mail-alt" href="mailto:{{ EMAIL_ADDRESS }}"></a></li>
+        <li>
+          <a title="Email" class="nodec" href="mailto:{{ EMAIL_ADDRESS }}">
+            <span style="width: 18px;" class="glyphicon icon-mail-alt" aria-hidden="true"></span>
+          </a>
+        </li>
         {% endif %}
         {% if GITHUB_ADDRESS %}
-          <li><a class="nodec icon-github" href="{{ GITHUB_ADDRESS }}"></a></li>
+        <li>
+          <a title="Github" class="nodec" href="{{ GITHUB_ADDRESS }}">
+            <span style="width: 18px;" class="glyphicon icon-github" aria-hidden="true"></span>
+          </a>
+        </li>
         {% endif %}
         {% if SO_ADDRESS %}
-          <li><a class="nodec icon-stackoverflow" href="{{ SO_ADDRESS }}"></a></li>
+        <li><a class="nodec icon-stackoverflow" href="{{ SO_ADDRESS }}"></a></li>
         {% endif %}
         {% if TWITTER_ADDRESS %}
-          <li><a class="nodec icon-twitter" href="{{ TWITTER_ADDRESS }}"></a></li>
+        <li><a class="nodec icon-twitter" href="{{ TWITTER_ADDRESS }}"></a></li>
         {% endif %}
         {% if FB_ADDRESS %}
-          <li><a class="nodec icon-facebook" href="{{ FB_ADDRESS }}"></a></li>
+        <li><a class="nodec icon-facebook" href="{{ FB_ADDRESS }}"></a></li>
         {% endif %}
-        <!-- Google Plus One button
-        <div class="g-plusone" data-size="small"></div>
-        -->
         {% if FEED_ATOM or FEED_RSS %}
-          <li><a class="nodec icon-rss" href="/{% if FEED_ATOM %}{{ FEED_ATOM }}{% else %}{{ FEED_RSS }}{% endif %}"></a></li>
+        <li>
+          <a title="RSS" class="nodec" href="/{% if FEED_ATOM %}{{ FEED_ATOM }}{% else %}{{ FEED_RSS }}{% endif %}">
+            <span style="width: 18px;" class="glyphicon icon-rss" aria-hidden="true"></span>
+          </a>
+        </li>
         {% endif %}
       </ul>
     </div>

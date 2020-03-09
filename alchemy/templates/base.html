@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="google-site-verification" content="PRVvb_b8tFZXcHnTycrRQ3mFqxEkUJNV4kN_jpsNC00" />
-    <link rel="canonical" href="{{ SITEURL }}/{{ output_file }}" />
+    <link rel="canonical" href="/{{ output_file }}" />
 
     <title>{% block title %}{{ SITE_SUBTEXT }}{% endblock title %}</title>
 
@@ -27,7 +27,7 @@
       <link type="application/rss+xml" rel="alternate" href="/{{ FEED_RSS }}" title="{{ SITENAME }} RSS Feed">
     {% endif %}
 
-    <link rel="stylesheet" href="{{ SITEURL }}/theme/css/style.css">
+    <link rel="stylesheet" href="/theme/css/style.css">
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -45,8 +45,8 @@
   </div>
   {% include "include/footer.html" %}
 
-  <script src="{{ SITEURL }}/theme/js/jquery.min.js"></script>
-  <script src="{{ SITEURL }}/theme/js/bootstrap.min.js"></script>
+  <script src="/theme/js/jquery.min.js"></script>
+  <script src="/theme/js/bootstrap.min.js"></script>
 </body> <!-- 42 -->
 
 </html>
