@@ -50,20 +50,25 @@
             <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
           </a>
         </li>
+        <li>
+          <a title="Sensors" class="nodec" target="_blank" href="https://sensors.anardil.net">
+            <span class="glyphicon glyphicon-stats" aria-hidden="true"></span>
+          </a>
+        </li>
 
         <li class="muted">|</li>
 
         {% if EMAIL_ADDRESS %}
         <li>
           <a title="Email" class="nodec" href="mailto:{{ EMAIL_ADDRESS }}">
-            <span style="width: 18px;" class="glyphicon icon-mail-alt" aria-hidden="true"></span>
+            <span style="width: 20px;" class="glyphicon icon-mail-alt" aria-hidden="true"></span>
           </a>
         </li>
         {% endif %}
         {% if GITHUB_ADDRESS %}
         <li>
           <a title="Github" class="nodec" href="{{ GITHUB_ADDRESS }}">
-            <span style="width: 18px;" class="glyphicon icon-github" aria-hidden="true"></span>
+            <span style="width: 20px;" class="glyphicon icon-github" aria-hidden="true"></span>
           </a>
         </li>
         {% endif %}
@@ -79,7 +84,7 @@
         {% if FEED_ATOM or FEED_RSS %}
         <li>
           <a title="RSS" class="nodec" href="/{% if FEED_ATOM %}{{ FEED_ATOM }}{% else %}{{ FEED_RSS }}{% endif %}">
-            <span style="width: 18px;" class="glyphicon icon-rss" aria-hidden="true"></span>
+            <span style="width: 20px;" class="glyphicon icon-rss" aria-hidden="true"></span>
           </a>
         </li>
         {% endif %}
