@@ -1,7 +1,7 @@
 Title: Hal
 Date: 2017-04-02
 Category: Programming
-Tags: programming, minecraft, article, bash, computers
+Tags: programming, minecraft, games, bash, computers
 Status: published
 Summary: An in depth look into Hal, a Minecraft AI
 
@@ -18,7 +18,7 @@ code. If you want to try him out anytime, you can through my online demo
 ## What is Hal?
 
 Hal is a text based artificial intelligence intended to make playing Minecraft
-on a server easier and more fun. 
+on a server easier and more fun.
 
 ### How does he work?
 
@@ -123,7 +123,7 @@ line. For example
 ### How is he organized?
 
 Hal's functionality is broken up into independent modules. For instance, Hal is
-capable of remembering things for the players. 
+capable of remembering things for the players.
 
 ```
       <Steve> Hal remember that my favourite color is green
@@ -155,18 +155,18 @@ a couple advantages over other programming languages.
 For one, regular expressions are very easy to work with. In Bash, you have
 direct access to `grep`, `sed` and friends. Hal is essentially a regular
 expression matching engine, so easy access to and simple syntax for expressions
-help quite a bit. 
+help quite a bit.
 
 Other advantages include platform independent code, easy access to file system
 objects, and small size. Hal requires no libraries, has no compile time, and
-will run on any Linux system with Bash v4 or higher. 
+will run on any Linux system with Bash v4 or higher.
 
 Most of Hal's matching is done in `case` statements, which aren't true regular
-expressions, but "glob" matching. 
+expressions, but "glob" matching.
 
 There are a number of common complaints about shell code; hard to read,
 difficult to test, and error prone. These may be valid points, but there are
-certainly steps that can be taken to address them. 
+certainly steps that can be taken to address them.
 
 - Coding standards exist for shell. Following them makes your code safer and
   easier to read
@@ -217,7 +217,7 @@ understand. It's an HTTP web server in Bash for one, but also handles the task
 of allowing clients to communicate with Hal through HTTP POST.
 
 This snippet from `demo/web_server.sh:main()` shows the key functionality that
-allow the web server to work. 
+allow the web server to work.
 
 - Line 162 starts Hal in debug mode, Hal is only communicated with through
   `HAL_INPUT_FILE` and `HAL_OUTPUT_FILE`, which represent `latest.log` and
@@ -272,7 +272,7 @@ chat, but there's more than that built in.
 ### Function callbacks and intentions
 
 Although not used much currently, Hal supports registering callback functions
-that will be triggered when a regular expression is matched on the input line. 
+that will be triggered when a regular expression is matched on the input line.
 
 For example, the following code in `modules/chatting.sh`, allows Hal to ask for
 confirmation after the user says something like `Hal be quiet`. Once the
@@ -295,7 +295,7 @@ intention on the error message the server returns when the player doesn't
 exist. This way, Hal can tell the player what happened.
 
 Hal can also recognize and answer math questions, and query Wikipedia for
-answers if the user asks him about a topic he doesn't know about. 
+answers if the user asks him about a topic he doesn't know about.
 
 
 ### ([vV]ery )\*Fuzzy matching

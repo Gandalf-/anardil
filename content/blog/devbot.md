@@ -1,7 +1,7 @@
 Title: Devbot
 Date: 2018-12-26
 Category: Programming
-Tags: programming, scripting, automation
+Tags: programming, bash, automation
 Status: published
 Summary: Automate your workflow with Devbot
 

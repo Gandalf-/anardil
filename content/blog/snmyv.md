@@ -1,7 +1,7 @@
 Title: Social Network Mining YouTube Videos
 Date: 2017-04-04
 Category: Research
-Tags: article, research, datamining
+Tags: research, data-science
 Status: published
 
 ## Abstract

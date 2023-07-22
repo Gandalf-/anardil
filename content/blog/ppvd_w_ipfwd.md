@@ -1,7 +1,7 @@
 Title: Probabilistic Policy Violation Detection with IPFWD
 Date: 2017-04-04
 Category: Research
-Tags: article, research, firewalls, security
+Tags: research, firewalls, security
 Status: published
 
 ## Abstract

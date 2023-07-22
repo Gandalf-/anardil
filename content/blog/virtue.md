@@ -1,11 +1,11 @@
 Title: Virtue
 Date: 2016-09-22
 Category: Articles
-Tags: article, personal, philosophy
+Tags: personal, philosophy
 Status: published
 Summary: A new way to look at an old word and maybe yourself
 
-### Virtue is an old word.  
+### Virtue is an old word.
 
 When you hear it you think of angels, saints, or a chivalrous knight, right?
 
@@ -23,7 +23,7 @@ you're capable of
 In this sense, a chef's knife might be virtuous if it allows the chef to dice
 and chop with the greatest ease and efficiency possible for a knife. Sure, a
 knife's quality is pretty straight forward to judge. You might see where I'm
-going with this. 
+going with this.
 
 ### How do you know if you're a virtuous person?
 

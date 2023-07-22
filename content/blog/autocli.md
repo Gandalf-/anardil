@@ -1,7 +1,7 @@
 Title: AutoCLI
 Date: 2018-07-15
 Category: Programming
-Tags: programming, scripting
+Tags: programming, bash
 Status: published
 Summary: Manage large numbers of scripts with generated menus
 
@@ -9,9 +9,9 @@ Summary: Manage large numbers of scripts with generated menus
 AutoCLI simplifies managing scripts by auto generating option menus, all in bash, without any dependencies. Sub menus, customization, and positional arguments are all supported. See [autocli.sh](https://github.com/Gandalf-/DotFiles/blob/master/lib/autocli.sh) on GitHub for the source and more examples.
 
 # The problem
-One of the best parts of using the command line is that you can automate your workflow with scripts. Commonly repeated commands can be turned into aliases and commonly repeated logical steps can be turned into scripts. However, at some point, it becomes difficult to manage a lot of aliases and scripts. 
+One of the best parts of using the command line is that you can automate your workflow with scripts. Commonly repeated commands can be turned into aliases and commonly repeated logical steps can be turned into scripts. However, at some point, it becomes difficult to manage a lot of aliases and scripts.
 
-- How are they named? 
+- How are they named?
 
 - What have you already made?
 
@@ -20,7 +20,7 @@ One of the best parts of using the command line is that you can automate your wo
 Another problem, particularly with aliases, is portability. I prefer to write scripts in `bash`, but use `fish` as my primary shell, and `zsh` fairly often at work. Aliases written in bash may work with zsh, but there are some gotchas, and they're completely incompatible with fish. If I'm on a system that doesn't have fish, and all my scripts are written in fish, I'm out of luck.
 
 # A partial solution
-You can combine the logic and actions of several of your scripts together in to a "super script". Usually, this is wrapped with some kind of case statement that looks through the input arguments, determines what you're trying to do, then calls the appropriate sub script (function). A common, simple pattern: 
+You can combine the logic and actions of several of your scripts together in to a "super script". Usually, this is wrapped with some kind of case statement that looks through the input arguments, determines what you're trying to do, then calls the appropriate sub script (function). A common, simple pattern:
 ```shell
 case $1 in
 	s)
@@ -52,9 +52,9 @@ case $1 in
 		;;
 esac
 ```
-Neither of these examples is doing anything out of the ordinary. Unfortunately, managing these menus quickly becomes difficult: 
+Neither of these examples is doing anything out of the ordinary. Unfortunately, managing these menus quickly becomes difficult:
 
-- Are you passing all the arguments along correctly? 
+- Are you passing all the arguments along correctly?
 - Help text? How do you know what options are available?
 - What if you want to use flags or positional arguments? `cook --with carrots cake`?
 - What about sub menus? `cook dinner spaghetti -h`
@@ -80,7 +80,7 @@ When we call the output script, we get a menu
 leaf@home ~> ./wizard
 
 wizard
-  
+
   update
   devbot ...
 ```
@@ -90,14 +90,14 @@ And sub menu for the `devbot` commands
 leaf@home ~> ./wizard devbot
 
 wizard devbot
-  
+
   start
   stop
 ```
 
 Library functions are denoted with `::`, for example `devbot::setup`. This tells AutoCLI that the given function is for internal use only, and shouldn't be exposed as a command in a menu.
 
-For very large scripts composed of multiple files, you can define the `sources` array variable with the paths to the files containing your commands and library functions. See [auto_wizard](https://github.com/Gandalf-/DotFiles/blob/master/bin/auto_wizard) on GitHub for an example. 
+For very large scripts composed of multiple files, you can define the `sources` array variable with the paths to the files containing your commands and library functions. See [auto_wizard](https://github.com/Gandalf-/DotFiles/blob/master/bin/auto_wizard) on GitHub for an example.
 
 The output from AutoCLI is always a single Bash script; this makes it easy to copy to other machines and to install (one position independent file in your $PATH). To run, AutoCLI requires Bash 4.0, but the output should run on any version.
 
@@ -163,7 +163,7 @@ meta_body[wizard]='
 --force) force=1 ;;
 '
 
-# create the output script, named "wizard", 
+# create the output script, named "wizard",
 # in this directory
 autocli::create wizard .
 ```

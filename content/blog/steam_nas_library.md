@@ -1,7 +1,7 @@
 Title: Steam Library on Network Attached Storage
 Date: 2019-03-10
 Category: Articles
-Tags: article, computers, gaming, networking, steam, nas, windows
+Tags: computers, gaming, networking, nas, windows
 Status: published
 
 

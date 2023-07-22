@@ -1,7 +1,7 @@
 Title: Ray Tracing with Functional Languages
 Date: 2016-03-12
 Category: Programming
-Tags: programming, computer graphics, racket, article
+Tags: programming, graphics, racket
 Status: published
 Summary: The advantages of using the functional paradigm with ray tracing.
 Author: marble
@@ -73,12 +73,12 @@ see if a point is in shadow.
 ```Scheme
 ; Check every shape to find the nearest hit shape by a given ray.
 (: World-nearest-hit (-> World Ray Intersection))
-(define (World-nearest-hit world ray)  
+(define (World-nearest-hit world ray)
   (let loop ((nearest-shape (Intersection-empty))
              (spheres (World-spheres world)))
     (if (null? spheres)
         nearest-shape
-	   ; Try intersecting a sphere, and overwrite the nearest hit if 
+	   ; Try intersecting a sphere, and overwrite the nearest hit if
 	   ; the current try is closer.
         (let ((current-try (Sphere-intersect (car spheres) ray)))
           (loop
@@ -151,7 +151,7 @@ is that it converges very slowly. In most cases it's because not all samples are
 spaced within the sampling domain (like a circle or a hemisphere), which can cause a high
 variance between each pixel's result, and so a more careful distribution of samples can
 greatly reduce the number of total samples needed. One such topic in this domain is called
-stochastic sampling, but that is outside the scope of this article. 
+stochastic sampling, but that is outside the scope of this article.
 
 In reality, all of the illumination components would be obtained through the weighted
 summation of colors from countless rays bouncing all around the scene. This is done in
@@ -219,4 +219,3 @@ language has its own pros and cons. The concept of a paradigm is to give a prefe
 towards a certain programming style and a way of thinking, and it's the paradigm of
 functional languages like Racket that allows ray tracing to be written in a more native
 and concise manner.
-

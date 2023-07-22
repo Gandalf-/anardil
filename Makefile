@@ -6,3 +6,6 @@ dev:
 
 publish:
 	pelican --ignore-cache -o /mnt/ssd/hosts/web/www
+
+tags:
+	@sh opt/show-tags.sh

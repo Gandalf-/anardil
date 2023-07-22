@@ -1,7 +1,7 @@
 Title: Rime of the Frost Maiden: Hellin
 Date: 2023-06-18
 Category: Gaming
-Tags: gaming, dungeons and dragons
+Tags: gaming, dnd
 Status: published
 Summary: Hellin's background
 

@@ -1,9 +1,9 @@
 Title: Who am I and how do I know?
 Date: 2011-01-01
 Category: Personal
-Tags: personal, essay
+Tags: personal, philosophy
 Status: published
-Summary: Essay 
+Summary: Essay
 
 *From 2011*
 
@@ -22,7 +22,7 @@ to scribble wastefully over the canvas. But even then, I suppose its worth would
 subjective. I’m not comfortable with calling myself a creator due to the fact that I’m not
 really making anything new and calling myself a transformer sounds ridiculous but I
 suppose the idea I’m trying to get across is now understood?
- 
+
 How do I know that I am what I am? I’m sure there are several ways to do this. For one, I
 could look at my actions and see that I’ve created many things. Using the word “create” is
 simply for flow as we have mentioned before that I’m not really forming new material. I’ve
@@ -31,14 +31,14 @@ gauntlets, stories, among other things that are all tangible and free for the wo
 as they wish, should it wish to use them. I see a stark distinction between tangible and
 intangible and how they tend to be useful to the world as a whole or in part. Its really
 kind of frustrating how pointless many things in our lives really are. But that is a topic
-for another time I suppose. 
+for another time I suppose.
 
 Back to the original question of how do I know who I am, it would be quite easy to just
 say that I am a “creator” and be done with it. There is no one as aptly equipped to
 describe myself as me and no one with any true authority to challenge my description.
 Therefore, should I believe myself to be anything at all, within the realm of the mind and
 philosophical standing not physical attributes, I am whatever I say. It’s very empowering
-to be able to say, “I am an artist” and have no one be able to tell you otherwise. 
+to be able to say, “I am an artist” and have no one be able to tell you otherwise.
 
 It’s also possible to state things that others could dispute, such as “I am a rock”, but
 without any evidence to support your claim or severe lack of evidence to keep them from
