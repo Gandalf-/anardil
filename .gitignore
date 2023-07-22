@@ -4,3 +4,4 @@ default.conf
 keys
 ssl.conf
 .stignore
+.DS_Store

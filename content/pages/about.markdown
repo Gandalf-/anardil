@@ -11,7 +11,17 @@ here too, on any variety of topics.
 
 What does Anardil mean? It's the name of the 6th king of Gondor from The Lord
 of the Rings. The king himself isn't known for anything particularly special.
-But the name means "friend of the sun" in Quenya. I think it' a very
-aesthetically pleasing word, and I really like the meaning.
+But the name means "friend of the sun" in Quenya. I think its an aesthetically
+pleasing word and like the meaning.
+
+This is a small network of websites:
+
+- [Diving Timeline](https://diving.anardil.net/timeline/index.html)
+- [Diving Gallery](https://diving.anardil.net/gallery/index.html)
+- [Diving Taxonomy](https://diving.anardil.net/taxonomy/index.html)
+- [Surface Pictures](https://photos.anardil.net)
+- [HTTP Share](https://public.anardil.net)
+- [Minecraft Map](https://overviewer.anardil.net)
+- [House Sensors](https://sensors.anardil.net)
 
 If you'd like to contact me, I'm reachable by email at `austin@anardil.net`
