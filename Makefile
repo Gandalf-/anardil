@@ -5,7 +5,7 @@ dev:
 	pelican --autoreload -o ~/working/object-publish/web
 
 publish:
-	pelican --ignore-cache -o /mnt/ssd/hosts/web/www
+	rsync -av ~/working/object-publish/web/ yew:/mnt/ssd/hosts/web/www/
 
 tags:
 	@sh opt/show-tags.sh

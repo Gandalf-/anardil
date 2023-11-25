@@ -1,6 +1,6 @@
 Title: Pirate Insults!
 Date: 2023-07-22
-Category: Gaming
+Category: Programming
 Tags: gaming, programming, dnd, python
 Status: published
 Summary: Insult yer enemies like a pirate
