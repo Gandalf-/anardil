@@ -3,6 +3,7 @@ Date: 2015-12-15
 Category: Articles
 Tags: article, security
 Status: published
+Summary: This document will describe the capabilities and mechanics of IPSec as outlined by the IETF
 
 ### Table of Contents
 ```
@@ -37,7 +38,7 @@ The IPSec suite is composed of two main protocols, Authentication Header (AH) an
 This protocol provides the mechanisms for verifying packet data integrity and the source address. Verification is provided by the hashing algorithms supported by AH, such as SHA1 and MD5. Supposing both clients have a non-standard hashing algorithm, IPSec allows them to use that in place of the required standards. AH does not provide any form of encryption to any part of the packet, meaning that the full contents can be sniffed and revealed by third parties.
 
 <center>
-![alt text](https://anardil.net/extra/figure01.png "Figure 01")
+![alt text](/extra/ipsec-01.png "Figure 01")
 
 *Figure 01: IPSec AH IPv4 Header Format [2]*
 
@@ -68,7 +69,7 @@ Additionally, AH can provide replay attack protection by verifying the sequence 
 In IPv6, AH is an extension header that authenticates all headers and data after it’s location in the packet. The AH extension is added immediately after the original packet header, but before the transport header; also, the protocol field data in the original packet is replaced with 51, which denotes AH  [1].
 
 <center>
-![alt text](https://anardil.net/extra/figure03.png "Figure 03")
+![alt text](/extra/ipsec-03.png "Figure 03")
 
 *Figure 03: IPSec AH IPv6 Packet Format [4]*
 
@@ -110,7 +111,7 @@ Unlike AH which simply precedes the packet, ESP surrounds the source packet. Thi
 
 
 <center>
-![alt text](https://anardil.net/extra/figure05.png "Figure 05")
+![alt text](/extra/ipsec-05.png "Figure 05")
 
 *Figure 05: IPv6 ESP Header and Trailer [6]*
 
@@ -122,7 +123,7 @@ AH and ESP are typically not used together since AH doesn't allow traffic to cro
 
 
 <center>
-![alt text](https://anardil.net/extra/figure06.png "Figure 06")
+![alt text](/extra/ipsec-06.png "Figure 06")
 
 *Figure 06: ESP Tunnel and Transport Mode Packet Format*
 
@@ -167,7 +168,7 @@ It’s also possible to set up automatic keying with asymmetric encryption, such
 
 
 <center>
-![alt text](https://anardil.net/extra/figure07.png "Figure 07")
+![alt text](/extra/ipsec-07.png "Figure 07")
 
 *Figure 07: IKE Communication Flow [11]*
 </center>
@@ -187,7 +188,7 @@ When configured between two routers, such as a branch office and headquarters of
 
 
 <center>
-![alt text](https://anardil.net/extra/figure08.png "Figure 08")
+![alt text](/extra/ipsec-08.png "Figure 08")
 
 *Figure 08: IPv4 ESP Packet Format - IPSec Tunnel Mode [9]*
 
@@ -208,7 +209,7 @@ Transport mode is the default for IPSec, and is dissimilar to a VPN. Instead, it
 
 
 <center>
-![alt text](https://anardil.net/extra/figure09.png "Figure 09")
+![alt text](/extra/ipsec-09.png "Figure 09")
 
 *Figure 09: Tunnel vs Transport Mode [15]*
 
@@ -221,7 +222,7 @@ AH and ESP do not encapsulate the source packet like in Tunnel mode, and only en
  When a packet is sent, it’s header is modified to allow for the AH fields. When it’s received on the other end, the packet is reassembled to its original format before it’s handed off the to the process waiting for it. This is done at the IP level in the network stack, applications don’t have to know how to deal with IPSec modified packets.
 
 <center>
-![alt text](https://anardil.net/extra/figure10.png "Figure 10")
+![alt text](/extra/ipsec-10.png "Figure 10")
 
 *Figure 10: IPSec ESP Transport Mode [9]*
 

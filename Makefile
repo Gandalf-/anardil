@@ -1,10 +1,10 @@
 local:
-	pelican --ignore-cache -o ~/working/object-publish/web
+	pelican -o ~/working/object-publish/web
 
 dev:
 	pelican --autoreload -o ~/working/object-publish/web
 
-publish:
+sync:
 	rsync -av ~/working/object-publish/web/ yew:/mnt/ssd/hosts/web/www/
 
 tags:
