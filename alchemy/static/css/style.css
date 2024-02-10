@@ -7363,3 +7363,12 @@ a:hover {
   margin-bottom: 30px;
   margin-top: 30px;
 }
+
+.mini-post img {
+  display: none !important;
+}
+
+.post img {
+  margin-left: auto;
+  margin-right: auto;
+}
