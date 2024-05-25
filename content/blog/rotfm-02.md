@@ -1,7 +1,7 @@
 Title: Hellin's Notes: The Netherese Tower
 Date: 2023-10-26
 Category: Gaming
-Tags: gaming, dnd
+Tags: gaming, dnd, rime
 Status: published
 Summary: Hellin's Super Cool Adventure Journal: Dzann, Dzann, and more Dzanns
 

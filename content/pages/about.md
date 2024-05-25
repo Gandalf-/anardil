@@ -23,14 +23,16 @@ This is a [small network of websites](https://goto.anardil.net):
 * [Diving Photos - Sites](https://diving.anardil.net/sites/)
 * [Diving Photos - Taxonomy](https://diving.anardil.net/taxonomy/)
 * [Diving Photos - Timeline](https://diving.anardil.net/timeline/)
-* [Surface Photos](https://photos.anardil.net)
+* [Surface Photo Gallery](https://photos.anardil.net)
 
 ### Projects
 * [HTTP Share](https://public.anardil.net)
 * [Minecraft Map](https://overviewer.anardil.net)
-* [House Sensors Graphs](https://sensors.anardil.net)
 * [Pirate Insult Generator](https://pirates.anardil.net)
 * [Raspberry Pi Timelapse](https://timelapse.anardil.net)
 * [AI Artwork Gallery](https://art.anardil.net)
+* [Landing Page](https://goto.anardil.net)
+* [D&D Landing Page](https://dnd.anardil.net)
+* [Morrowind Alchemy Planner](https://alchemy.anardil.net)
 
 If you'd like to contact me, I'm reachable by email at `austin@anardil.net`

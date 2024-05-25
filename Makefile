@@ -9,3 +9,6 @@ sync:
 
 tags:
 	@sh opt/show-tags.sh
+
+serve:
+	@serve ~/working/object-publish/web

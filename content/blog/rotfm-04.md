@@ -1,7 +1,7 @@
 Title: Hellin's Notes: Betrayal, Ghosts, and Zombies
 Date: 2023-11-17
 Category: Gaming
-Tags: gaming, dnd
+Tags: gaming, dnd, rime
 Status: published
 Summary: Hellin's Super Cool Adventure Journal: Aging Curses, Zombie Whales, and Frost Giant Fortresses!
 

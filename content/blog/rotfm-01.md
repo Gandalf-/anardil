@@ -1,7 +1,7 @@
 Title: Rime of the Frost Maiden: One
 Date: 2023-07-08
 Category: Gaming
-Tags: gaming, dnd
+Tags: gaming, dnd, rime
 Status: published
 Summary: Rime of the Frost Maiden: One
 

@@ -1,7 +1,7 @@
 Title: Hellin's Notes: Return to Caer-Dineval
 Date: 2023-11-11
 Category: Gaming
-Tags: gaming, dnd
+Tags: gaming, dnd, rime
 Status: published
 Summary: Hellin's Super Cool Adventure Journal: Magic, Giants, and a Dragon, Oh My!
 
