@@ -18,7 +18,7 @@ This post is going to assume that other resources will be used to configure your
 raspberry pi, the camera, networking, and storage device.
 
 Here's an example of the
-[result](https://public.anardil.net/timelapse/2019-09/2019-09-01.mp4)!
+[result](https://timelapse-anardil.sfo3.cdn.digitaloceanspaces.com/2020-05/2020-05-18.mp4)!
 
 
 # Taking Pictures
@@ -254,9 +254,9 @@ long.
 
 You can find the full working scripts I use here:
 
-* [day-night.sh](https://public.anardil.net/code/timelapse/day-night.sh)
-* [video-maker.sh](https://public.anardil.net/code/timelapse/video-maker.sh)
-* [timelapse.sh](https://public.anardil.net/code/timelapse/timelapse.sh)
+* [day-night.sh](/extra/timelapse/day-night.sh)
+* [video-maker.sh](/extra/timelapse/video-maker.sh)
+* [timelapse.sh](/extra/timelapse/timelapse.sh)
 
 # Summary
 

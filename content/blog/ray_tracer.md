@@ -208,7 +208,7 @@ One modern instance of this "separation" design practice is seen in the Halide p
 language. What's interesting about Halide is that it is a functional language that is
 compiled inside of a C++ program into specially scheduled instructions which often times
 can outpace even hand-optimized assembly for applications like image processing. The
-Halide website is at [http://halide-lang.org/](http://halide-lang.org/). Other
+Halide website is at [https://halide-lang.org/](https://halide-lang.org/). Other
 domain-specific languages which focus on certain sets of problems like ray tracing may be
 following in Halide's footsteps in the near future.
 

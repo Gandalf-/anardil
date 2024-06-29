@@ -31,7 +31,7 @@ from a technical point of view like mine, here's an overview of some tools you c
 <br>
 ## Squid: fast, but not as secure
 
-[Squid](http://www.squid-cache.org/) is typically used more for caching and network
+[Squid](https://www.squid-cache.org/) is typically used more for caching and network
 balancing. As a full proxy, it has a unique advantage in that it has direct access to all
 the HTTP headers passing through it and can manipulate them as you see fit. I have another
 article here that describes exactly what an [elite

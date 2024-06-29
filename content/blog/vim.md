@@ -10,8 +10,7 @@ your perusal. What's the best way to use this? Skim through, find something
 that sounds interesting and try it out for yourself. Like it? Hate it? Try
 something else! Experiment and iterate. Patience is key!
 
-Without further ado, here's a break down of my
-personal `.vimrc`. You can find it [here](https://public.anardil.net/DotFiles/etc/vimrc).
+Without further ado, here's a break down of my personal `.vimrc`. You can find it [here](/extra/vimrc).
 
 A note! This is not a static file! Be sure to check back in periodically for
 updates. There's even a [Github Repo](https://github.com/gandalf-/DotFiles)!
@@ -75,7 +74,7 @@ insert mode! As an added bonus, both hands can reach it.
 ```
 
 ## Plugins
-Blasphemy! A real Vim user doesn't need plugins! 
+Blasphemy! A real Vim user doesn't need plugins!
 
 Well, maybe, but they certainly help. None of these are superfluous, but
 `neocomplete` is by far the most useful. None of these have extra binary
@@ -83,7 +82,7 @@ dependencies. `Vimwiki` is also indispensable, though you'll probably spend some
 time tweaking before it you're happy with it.
 
 ```vim
-  " Vundle 
+  " Vundle
     filetype off
     set rtp+=~/.vim/bundle/Vundle.vim
     call vundle#begin()
@@ -111,18 +110,18 @@ without having multiple vimrc's.
     if hostname == "wkstn-avoecks"
       let g:vimwiki_root = '~/vimwiki'
       let g:vimwiki_list = [{
-            \ 'path': '~/vimwiki/', 
+            \ 'path': '~/vimwiki/',
             \ 'syntax': 'markdown',
             \ 'ext': '.md'}]
 
     else
       let g:vimwiki_root = '~/google_drive'
       let g:vimwiki_list = [{
-            \ "path": '~/google_drive/', 
-            \ "path_html": '/tmp/html/', 
-            \ "syntax": 'markdown', 
-            \ "ext": '.md', 
-            \ "css_file": '~/.vim/bundle/vimwiki/autoload/vimwiki/style.css', 
+            \ "path": '~/google_drive/',
+            \ "path_html": '/tmp/html/',
+            \ "syntax": 'markdown',
+            \ "ext": '.md',
+            \ "css_file": '~/.vim/bundle/vimwiki/autoload/vimwiki/style.css',
             \ "custom_wiki2html": '~/google_drive/code/shell/wiki2html.sh', }]
     endif
     nmap <Leader>wn <Plug>VimwikiNextLink
@@ -155,7 +154,7 @@ source to use it! Sounds scary, but it's really quite straight forward. See the
 [Vim Github Repo](https://github.com/vim/vim) for details.
 
 ```vim
-  " neocomplete 
+  " neocomplete
     if v:version >= 704 && has("lua")
       "let g:acp_enableAtStartup = 0
       let g:neocomplete#enable_at_startup = 1
@@ -188,7 +187,7 @@ source to use it! Sounds scary, but it's really quite straight forward. See the
       autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
     endif
 
-  " neosnippet 
+  " neosnippet
     imap <C-j> <Plug>(neosnippet_expand_or_jump)
     smap <C-j> <Plug>(neosnippet_expand_or_jump)
     xmap <C-j> <Plug>(neosnippet_expand_target)
@@ -205,7 +204,7 @@ source to use it! Sounds scary, but it's really quite straight forward. See the
 ```
 
 Tired of running into syntax errors and compiler warnings? `syntastic` is your
-friend and quite easy to use. 
+friend and quite easy to use.
 
 ```vim
   " syntastic
@@ -243,7 +242,7 @@ useful.
   " Be as wild as possible
     set wildmode=full wildmenu
     set wildignore=*.o,*~,*.pyc,/usr/include/*,*.class,*.bak,
-    set wildignore+=.git\*,.svn\* 
+    set wildignore+=.git\*,.svn\*
 
   " Performance!?
     set lazyredraw ttyfast
@@ -299,7 +298,7 @@ the Macros section.
         call cursor(l, c)
     endfun
     autocmd FileType sh,c,cpp,java,python autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
-  " File specific 
+  " File specific
     autocmd FileType make setlocal noexpandtab
 
   " Avoid dumb markdown extension
@@ -357,7 +356,7 @@ folding.
       let fillcharcount = winwd - len(line) - len(fdnfo)
       return line . repeat(" ",fillcharcount) . fdnfo
     endfunction
-    set foldmethod=indent   
+    set foldmethod=indent
     set foldnestmax=10
     set nofoldenable
     set foldlevel=2
@@ -403,7 +402,7 @@ the current working directory in a Vim thin pane to the right.
     noremap :! :!clear;
     noremap :make :!clear; make
     noremap <silent> <c-l> :nohlsearch<cr>
-  
+
   " Make pylint happy
     autocmd BufNewFile,BufRead *.py setlocal tabstop=4
 
@@ -418,7 +417,7 @@ the current working directory in a Vim thin pane to the right.
 ## Text, tab and indent related
 
 Tabs or spaces? Either way, Vim can infer a lot of information for the file
-you're working on to make life easier for you. 
+you're working on to make life easier for you.
 
 Also, hate/can't use plugins but love autocompletion? Uncomment out the block
 in this section for plugin-less tab completion. It's plenty smart, just not
@@ -432,7 +431,7 @@ quite as fast as `neocomplete`.
   set expandtab smarttab
   set autoindent smartindent nocindent
   set showmatch                    " Show matched brackets
-  
+
   "set completeopt=menu,menuone
   "set pumheight=3
   "
@@ -562,8 +561,8 @@ easy to hit hotkeys that can do anything you like.
     vnoremap <silent> <leader>T :!column -te<cr>
 
   " open buffer, open tab, reload, save, sudo save current file
-    nnoremap <leader>E :e 
-    nnoremap <leader>e :tabe 
+    nnoremap <leader>E :e
+    nnoremap <leader>e :tabe
     nnoremap <leader>l :e % <cr>zz
     nnoremap <leader>k :w<CR>
 
@@ -572,7 +571,7 @@ easy to hit hotkeys that can do anything you like.
     nnoremap <silent> <leader>o o<Esc>
 
   " make
-    nnoremap <silent> <leader>M :!tmux send-keys -t right 
+    nnoremap <silent> <leader>M :!tmux send-keys -t right
           \ 'make' C-m<cr><cr>
     nnoremap <silent> <leader>m :!clear;make<CR>
 
@@ -624,24 +623,24 @@ And back to general macros!
         execute "!" . a:compile_command . " " . bufname("%")
       endif
     endfunction
-    
+
     autocmd FileType python  nmap <leader>r :!clear;python %<cr>
     autocmd FileType scheme  nmap <leader>r :!clear;racket %<cr>
     autocmd FileType sh      nmap <leader>r :!clear;bash %<cr>
     autocmd FileType perl    nmap <leader>r :!clear;perl %<cr>
     autocmd FileType haskell nmap <leader>r :!clear;runhaskell %<cr>
-    
-    autocmd FileType java    nmap <leader>r 
+
+    autocmd FileType java    nmap <leader>r
           \ :silent call Compile("javac")<cr> <bar>:!clear;java %:r<cr>
-    autocmd FileType c       nmap <leader>r 
+    autocmd FileType c       nmap <leader>r
           \ :silent call Compile("gcc")  <cr> <bar>:!clear;./a.out <cr>
 
   " Run program in pane to the right
-    autocmd FileType python 
-          \ nnoremap <leader>y :!tmux send-keys -t right 
+    autocmd FileType python
+          \ nnoremap <leader>y :!tmux send-keys -t right
           \ 'python %' C-m <cr><cr>
     autocmd FileType sh
-          \ nnoremap <leader>y :!tmux send-keys -t right 
+          \ nnoremap <leader>y :!tmux send-keys -t right
           \ 'bash %' C-m<cr><cr>
 
   " Experiment
@@ -665,8 +664,8 @@ And back to general macros!
     endfunction
 
     command! -nargs=+ GrepBufs call GrepBuffers(<q-args>)
-    nnoremap <leader>/ :GrepBufs 
-    nnoremap <leader>* 
+    nnoremap <leader>/ :GrepBufs
+    nnoremap <leader>*
           \ :call GrepBuffers("<C-R><C-W>")<CR> <bar> :copen 7<cr>
 
   " Where are we?

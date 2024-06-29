@@ -22,8 +22,7 @@ Guessed: a g i r s t
 Congrats!
 ```
 
-You can find the complete runnable source
-[here](https://public.anardil.net/share/code/source/hangman.hs).
+You can find the complete runnable source [here](/extra/hangman.hs).
 
 # Setup
 

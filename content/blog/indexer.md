@@ -104,7 +104,7 @@ rather than piece-meal as they're discovered. Generally, I want to collect
 everything I'll need from the file system in one go so we don't have to
 sprinkle `IO` elsewhere in our program other than writing out the final result.
 
-[Source Code](https://public.anardil.net/code/indexer/Indexer/Directory.hs)
+[Source Code](/extra/indexer/Directory.hs)
 ```haskell
 data FileElement = FileElement
         { _fname :: String
@@ -173,7 +173,7 @@ parent directory's age is unknown by its children due to the single pass scan
 we're making. This could be filled in through post-processing, but it's not
 interesting information to present anyway, so I don't bother.
 
-[Source Code](https://public.anardil.net/code/indexer/Indexer/Age.hs)
+[Source Code](/extra/indexer/Age.hs)
 ```haskell
 data Age = Age Integer | NoAge
     deriving (Eq)
@@ -199,7 +199,7 @@ willing to pay for implementation simplicity. Yet again, parent directories get
 in the way of a simple representation and require a `NoSize` sum type so we can
 correctly distinguish between zero size and no size.
 
-[Source code](https://public.anardil.net/code/indexer/Indexer/Size.hs)
+[Source code](/extra/indexer/Size.hs)
 ```haskell
 data Size = Size Integer | NoSize
 
@@ -225,8 +225,7 @@ can assign those based on that information. The last possibility, other than
 assigning a default icon, is to mark the file as needing a custom icon. This is
 the case for images and videos which get thumbnails and gifs respectively. Post
 processing will collect the `FileElement`s that need icons generated and
-delegate to
-[thumbnail.py](https://public.anardil.net/code/indexer/thumbnail.py) later back
+delegate to a Python program later back
 in `main`. The output file name is predetermined by a hash of the input file
 path. Using `Data.Hashable (hash) :: a -> Int` lets us keep `IO` out of this
 inline icon processing entirely. But wait! Isn't that a `.py` you spy?
@@ -234,7 +233,7 @@ Unfortunately yes; image manipulation in pure Haskell was going to pull in
 literally dozens more external libraries through dependencies and Python
 [pillow](https://pillow.readthedocs.io/en/stable/) is just too easy.
 
-[Source Code](https://public.anardil.net/code/indexer/Indexer/Icon.hs)
+[Source Code](/extra/indexer/Icon.hs)
 ```haskell
 getIcon :: FilePath -> Bool -> Maybe String
 -- ^ nothing indicates that the icon needs to be generated

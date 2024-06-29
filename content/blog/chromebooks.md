@@ -43,5 +43,5 @@ what little word processing and powerpoint work I do, and there are whole host
 of online applications for other sorts of tasks like image editing, music, and
 even programming language IDEs.
 
-![alt text](http://us.toshiba.com/images/shop/family/cb30-2hd-gallery-slide-1.jpg "Toshiba Chromebook 2")
+![alt text](https://us.toshiba.com/images/shop/family/cb30-2hd-gallery-slide-1.jpg "Toshiba Chromebook 2")
 `Image from us.toshiba.com`

@@ -242,25 +242,25 @@ IPSec is a suite of flexible and extensible protocols and standards designed by 
 
 	Comer, Douglas; 4th Edition, © 2000 Prentice Hall
 
-2. [IPSec VPN WAN Design, Cisco](http://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/IPSec_Over.html)
+2. [IPSec VPN WAN Design, Cisco](https://www.cisco.com/c/en/us/td/docs/solutions/Enterprise/WAN_and_MAN/IPSec_Over.html)
 
-3. [RFC 4302 IP AH](http://tools.ietf.org/html/rfc4302)
+3. [RFC 4302 IP AH](https://tools.ietf.org/html/rfc4302)
 
-4. [IPSec, Telecommunications and Multimedia Laboratory](http://www.tml.tkk.fi/Tutkimus/IPSEC/chapter2.html)
+4. [IPSec, Telecommunications and Multimedia Laboratory](https://www.tml.tkk.fi/Tutkimus/IPSEC/chapter2.html)
 
-5. [RFC 4303 IP ESP](http://tools.ietf.org/html/rfc4303)
+5. [RFC 4303 IP ESP](https://tools.ietf.org/html/rfc4303)
 
-6. [The TCP/IP Guide](http://www.tcpipguide.com/)
+6. [The TCP/IP Guide](https://www.tcpipguide.com/)
 
-7. [Wikipeida, IPSec](http://en.wikipedia.org/wiki/IPsec)
+7. [Wikipeida, IPSec](https://en.wikipedia.org/wiki/IPsec)
 
 8. [Computer and Network Security - IPSec](https://www.youtube.com/watch?v=1g3jZL0CBCI )
 
-9. [An Illustrated Guide to IPSec]( http://www.unixwiz.net/techtips/iguide-ipsec.html )
+9. [An Illustrated Guide to IPSec]( https://www.unixwiz.net/techtips/iguide-ipsec.html )
 
-10. [Linux Advanced Routing & Traffic HOWTO]( http://lartc.org/howto/lartc.ipsec.html )
+10. [Linux Advanced Routing & Traffic HOWTO]( https://lartc.org/howto/lartc.ipsec.html )
 
-11. [H3C IKE Configuration Manual]( http://www.h3c.com/portal/Technical_Support___Documents/Technical_Documents/Security_Products/H3C_SecPath_F1000-E/Configuration/User_Manual/H3C_SecPath_WEB_Manual(F3169_F3207)-5PW106/201109/725705_1285_0.htm )
+11. [H3C IKE Configuration Manual]( https://www.h3c.com/portal/Technical_Support___Documents/Technical_Documents/Security_Products/H3C_SecPath_F1000-E/Configuration/User_Manual/H3C_SecPath_WEB_Manual(F3169_F3207)-5PW106/201109/725705_1285_0.htm )
 
 12. [RFC 4835, Cryptographic Algorithm Implementation Requirements for ESP and AH]( https://tools.ietf.org/html/rfc4835#section-3 )
 
@@ -270,4 +270,4 @@ IPSec is a suite of flexible and extensible protocols and standards designed by 
 
 14. [Transport Mode: IPSec, Microsoft - TechNet]( https://technet.microsoft.com/en-us/library/cc739674(v=ws.10).aspx )
 
-15. [IPSec Overview, eTutorials](http://etutorials.org/Networking/MPLS+VPN+security/Part+III+Practical+Guidelines+to+MPLS+VPN+Security/Chapter+6.+How+IPsec+Complements+MPLS/IPsec+Overview/)
+15. [IPSec Overview, eTutorials](https://etutorials.org/Networking/MPLS+VPN+security/Part+III+Practical+Guidelines+to+MPLS+VPN+Security/Chapter+6.+How+IPsec+Complements+MPLS/IPsec+Overview/)

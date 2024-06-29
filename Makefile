@@ -1,14 +1,16 @@
+www = ~/working/object-publish/web
+
 local:
-	pelican -o ~/working/object-publish/web
+	pelican -o ${www}
 
 dev:
-	pelican --autoreload -o ~/working/object-publish/web
+	pelican --autoreload -o ${www}
 
 sync:
-	rsync -av ~/working/object-publish/web/ aspen:/mnt/ssd/hosts/web/www/
+	rsync -av ${www}/ aspen:/mnt/ssd/hosts/web/www/
 
 tags:
 	@sh opt/show-tags.sh
 
 serve:
-	@serve ~/working/object-publish/web
+	@serve ${www}

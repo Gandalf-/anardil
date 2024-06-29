@@ -175,8 +175,7 @@ main = getArgs >>= collect >>= display
 
 # Full implementation
 
-Here's the full source. You can also find it
-[here](https://public.anardil.net/share/code/coreutils/cat.hs).
+Here's the full source. You can also find it [here](/extra/Cat.hs).
 
 ```haskell
 module Main where

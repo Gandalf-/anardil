@@ -10,8 +10,7 @@ Summary: An in depth look into Hal, a Minecraft AI
 Hal is a artificial intelligence I wrote for the Minecraft server I run. Here I
 hope to shed some light onto what he does and how he works. I'm going to run
 with the anthropomorphized 'he' even though Hal is really just a bunch of shell
-code. If you want to try him out anytime, you can through my online demo
-[here](http://hal.anardil.net:2095/).
+code.
 
 **Let's dive right in!**
 

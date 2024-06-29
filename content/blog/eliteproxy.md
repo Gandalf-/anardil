@@ -23,7 +23,7 @@ transactions reliable in that clients and servers can be sure that all the data 
 arrives at its destination. All HTTP messages include a header. For this discussion, the
 important fields are the following:
 
-- **HTTP_Remote_Addr:** 
+- **HTTP_Remote_Addr:**
 IP of the machine originally making the request. This is a user’s IP address, or that of their router.
 - **HTTP_Via:**
 A list of all web proxies that the HTTP request was forwarded through. When no proxies are used, this field is left blank.
@@ -75,7 +75,7 @@ secure websites check for header manipulation; the majority of such traffic come
 malicious web bots and scrapers trying to hide their origin. Once mistakenly flagged, a
 client using an anonymous proxy may be denied access to some websites. In addition, many
 free anonymous proxies are known to be malicious in that they log your real HTTP header
-information, as well as general web activity, to sell to others. 
+information, as well as general web activity, to sell to others.
 
 
  Lastly, an **elite proxy** overwrites all fields, making it appear that the proxy is
@@ -135,11 +135,11 @@ lightweight, powerful alternative to VPNs for anonymity on the web.
 
 
 ### References
-1. [W3 HTTP/1.1 Header Definitions, RFC 2616 Fielding, et al](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
-2. [IP Checker Field Descriptions, JonDynm](http://ip-check.info/description.php)
+1. [W3 HTTP/1.1 Header Definitions, RFC 2616 Fielding, et al](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+2. [IP Checker Field Descriptions, JonDynm](https://ip-check.info/description.php)
 3. [Understanding User Agent Strings, Microsoft](https://msdn.microsoft.com/en-us/library/ms537503(v=vs.85).aspx)
-4. [Squid3 Documentation, Squid3 Team]( http://www.squid-cache.org/Doc/config/ )
-5. [Proxy Servers, Wikipedia](http://en.wikipedia.org/wiki/Proxy_server )
+4. [Squid3 Documentation, Squid3 Team]( https://www.squid-cache.org/Doc/config/ )
+5. [Proxy Servers, Wikipedia](https://en.wikipedia.org/wiki/Proxy_server )
 
 ### /etc/squid3/squid.conf
         # Allow anyone with the IP address and port of the server to connect
@@ -170,6 +170,6 @@ lightweight, powerful alternative to VPNs for anonymity on the web.
 
         refresh_pattern         ^ftp:                             1440  	20%         10080
 		refresh_pattern         ^gopher:                          1440      0%          1440
-		refresh_pattern         -i (/cgi-bin/|\?)                 0         0%          0        
+		refresh_pattern         -i (/cgi-bin/|\?)                 0         0%          0
 		refresh_pattern         (Release|Packages(.gz)*)$         0         20%         2880
 		refresh_pattern         .                                 0         20%         4320
