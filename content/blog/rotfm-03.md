@@ -2,7 +2,7 @@ Title: Hellin's Notes: Return to Caer-Dineval
 Date: 2023-11-11
 Category: Gaming
 Tags: gaming, dnd, rime
-Status: published
+Status: draft
 Summary: Hellin's Super Cool Adventure Journal: Magic, Giants, and a Dragon, Oh My!
 
 So, we were done with the Netherese Tower, which was weird but cool, and

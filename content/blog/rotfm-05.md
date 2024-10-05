@@ -2,7 +2,7 @@ Title: Hellin's Notes: Ice Statues, Ice Beasts, and Ice Queens
 date: 2024-01-30
 Category: Gaming
 Tags: gaming, dnd, rime
-Status: published
+Status: draft
 Summary: Hellin's Super Cool Adventure Journal: Frozen brothers, ice monsters, and divine avatars!
 
 After we left the sea hags’ crusty old cave, we were off on a frosty treasure

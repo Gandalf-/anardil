@@ -2,7 +2,7 @@ Title: New Year's Aquarium Adventure
 Date: 2023-12-31
 Category: Gaming
 Tags: gaming, dnd
-Status: published
+Status: draft
 Summary: Can you and your tentacled friends protect the aquarium?
 
 The Seattle Aquarium's usual cacophony of excited visitors has faded into a

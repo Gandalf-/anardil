@@ -2,7 +2,7 @@ Title: Barovia's Holiday Party
 Date: 2023-12-23
 Category: Gaming
 Tags: gaming, dnd
-Status: published
+Status: draft
 Summary: Barovia's new holiday tradition is a bit more dangerous than most.
 
 <center>

@@ -2,7 +2,7 @@ Title: Probing the Undisclosed: Prelude
 Date: 2020-09-10
 Category: Gaming
 Tags: gaming, dnd
-Status: published
+Status: draft
 Summary: Probing the Undisclosed Prelude
 
 The brave adventurers put their heads together to recall what they know of the
